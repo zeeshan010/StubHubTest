@@ -1,0 +1,15 @@
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\bin\Debug\net6.0\StubHubTest.exe
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\bin\Debug\net6.0\StubHubTest.deps.json
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\bin\Debug\net6.0\StubHubTest.runtimeconfig.json
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\bin\Debug\net6.0\StubHubTest.dll
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\bin\Debug\net6.0\StubHubTest.pdb
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.csproj.AssemblyReference.cache
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.AssemblyInfoInputs.cache
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.AssemblyInfo.cs
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.csproj.CoreCompileInputs.cache
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.dll
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\refint\StubHubTest.dll
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.pdb
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\StubHubTest.genruntimeconfig.cache
+C:\Working Space\Learning\StubHub\StubHubTest\StubHubTest\obj\Debug\net6.0\ref\StubHubTest.dll
