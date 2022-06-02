@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Working Space\\Learning\\StubHub\\StubHubTest\\StubHubTest\\StubHubTest.csproj",
+      "projectUniqueName": "C:\\Working Space\\Learning\\Git Repo\\StubHubTest\\StubHubTest\\StubHubTest\\StubHubTest.csproj",
       "projectName": "StubHubTest",
-      "projectPath": "C:\\Working Space\\Learning\\StubHub\\StubHubTest\\StubHubTest\\StubHubTest.csproj",
+      "projectPath": "C:\\Working Space\\Learning\\Git Repo\\StubHubTest\\StubHubTest\\StubHubTest\\StubHubTest.csproj",
       "packagesPath": "C:\\Users\\888163\\.nuget\\packages\\",
-      "outputPath": "C:\\Working Space\\Learning\\StubHub\\StubHubTest\\StubHubTest\\obj\\",
+      "outputPath": "C:\\Working Space\\Learning\\Git Repo\\StubHubTest\\StubHubTest\\StubHubTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,12 +59,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -18,7 +18,7 @@ namespace Viagogo
     }
     public class Solution
     {
-      public static  Dictionary<string, double> dictionaryOfSameCity = new Dictionary<string, double>();
+      public static  Dictionary<string, int> dictionaryOfSameCity = new Dictionary<string, int>();
         static void Main(string[] args)
         {
             var events = new List<Event>{
@@ -69,7 +69,7 @@ namespace Viagogo
             }
         }
 
-        static double CheckAndGetDistance(string fromCity, string toCity)
+        static int CheckAndGetDistance(string fromCity, string toCity)
         {
             double distance = 0;
             if (dictionaryOfSameCity.ContainsKey(toCity))
@@ -90,7 +90,16 @@ namespace Viagogo
 
         static int GetDistance(string fromCity, string toCity)
         {
-            return AlphebiticalDistance(fromCity, toCity);
+            var distance = -1;
+            try
+            {
+                distance= AlphebiticalDistance(fromCity, toCity);
+            }
+            catch (Exception ex)
+            {
+                return distance;
+            }
+            return distance;
         }
 
         private static int AlphebiticalDistance(string s, string t)
