@@ -18,7 +18,7 @@ namespace Viagogo
     }
     public class Solution
     {
-      public static  Dictionary<string, int> dictionaryOfSameCity = new Dictionary<string, int>();
+        public static Dictionary<string, int> dictionaryOfSameCity = new Dictionary<string, int>();
         static void Main(string[] args)
         {
             var events = new List<Event>{
@@ -34,8 +34,11 @@ namespace Viagogo
                         };
 
 
-            var customer = new List<Customer> { new Customer { Name = "John Smith", City = "New York" } };
-            var query = customer.Where(x => x.Name == "John Smith").ToList();
+            var customer = new List<Customer> { new Customer { Name = "John Smith", City = "New York" }
+                                               ,new Customer { Name = "John Doe", City = "Boston" }
+
+            };
+            var query = customer;//.Where(x => x.Name == "John Smith").ToList();
 
             Console.WriteLine("Send Email to customer with Same city sorted by Price \n");
             foreach (var cus in query)
@@ -67,19 +70,35 @@ namespace Viagogo
                     AddToEmail(cus, ev);
                 }
             }
+
+            Console.WriteLine("\n Testing of  3rd question optimization starts \n");
+            foreach (var cus in query)
+            {
+                var custEvents = events.Select(x => new Event { Distance = CheckAndGetDistance(cus.City, x.City), Name = x.Name, City = x.City }).ToList();
+                foreach (var ev in custEvents.Where(x => x.Distance != -1).OrderBy(x => x.Distance).Take(5))
+                {
+                    AddToEmail(cus, ev);
+                }
+            }
+
+            Console.ReadLine();
         }
 
         static int CheckAndGetDistance(string fromCity, string toCity)
         {
-            int distance = 0;
-            if (dictionaryOfSameCity.ContainsKey(toCity))
+            int distance;
+            if (fromCity == toCity)
             {
-                distance = dictionaryOfSameCity[toCity];
+                return distance = 0;
             }
-            else
+            var pairOfCity = fromCity + "-" + toCity;
+            var oppositPairOfKey = toCity + "-" + fromCity;
+            bool keyExists = dictionaryOfSameCity.TryGetValue(pairOfCity, out distance);
+            keyExists= keyExists == false? dictionaryOfSameCity.TryGetValue(oppositPairOfKey, out distance):true;
+            if (!keyExists)
             {
                 distance = GetDistance(fromCity, toCity);
-                dictionaryOfSameCity.Add(toCity, distance);
+                dictionaryOfSameCity.Add(pairOfCity, distance);
             }
             return distance;
         }
@@ -93,7 +112,7 @@ namespace Viagogo
             var distance = -1;
             try
             {
-                distance= AlphebiticalDistance(fromCity, toCity);
+                distance = AlphebiticalDistance(fromCity, toCity);
             }
             catch (Exception ex)
             {
