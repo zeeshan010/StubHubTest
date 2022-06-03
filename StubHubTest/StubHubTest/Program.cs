@@ -9,7 +9,7 @@ namespace Viagogo
         public string Name { get; set; }
         public string City { get; set; }
         public decimal Price { get; set; }
-        public double Distance { get; set; }
+        public int Distance { get; set; }
     }
     public class Customer
     {
@@ -71,7 +71,7 @@ namespace Viagogo
 
         static int CheckAndGetDistance(string fromCity, string toCity)
         {
-            double distance = 0;
+            int distance = 0;
             if (dictionaryOfSameCity.ContainsKey(toCity))
             {
                 distance = dictionaryOfSameCity[toCity];
